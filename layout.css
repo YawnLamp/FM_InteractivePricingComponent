@@ -29,6 +29,7 @@ body {
   padding-top: 4em;
   background-image: url(images/bg-pattern.svg);
   background-repeat: no-repeat;
+  background-color: hsl(230, 100%, 99%);
 }
 
 .main-wrapper {
@@ -55,5 +56,52 @@ body {
   p {
     font-size: medium;
     color: hsl(225, 20%, 60%);
+  }
+}
+
+.main-card {
+  border: 2px solid black;
+  /* remove border */
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 3em;
+}
+
+.button-section {
+  display: flex;
+  gap: 5em;
+  align-items: center;
+  padding-top: 3em;
+  .checks {
+    display: flex;
+    flex-direction: column;
+    color: hsl(225, 20%, 60%);
+    font-size: 12px;
+    font-weight: 600;
+    gap: 7px;
+    .single-check {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      img {
+        max-height: 10px;
+      }
+    }
+  }
+  button {
+    min-block-size: 2.5em;
+    padding-left: 2.25em;
+    padding-right: 2.25em;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(227, 30%, 76%);
+    background-color: hsl(227, 35%, 25%);
+    border-radius: 15px;
+  }
+  button:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
   }
 }
